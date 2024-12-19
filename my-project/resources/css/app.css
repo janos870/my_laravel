@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components {
+  /* App Theme Styles */
+  .body-light {
+    @apply bg-slate-200 text-slate-800;
+  }
+
+  .body-dark {
+    @apply bg-slate-900 text-slate-200;
+  }
+
+  .header-light, .footer-light, .post-container-light {
+    @apply bg-slate-100 text-slate-800 shadow-md;
+  }
+
+  .header-dark, .footer-dark, .post-container-dark {
+    @apply bg-slate-700 text-slate-200 shadow-md;
+  }
+
+  /*App Header, Navbar styles */
+  .app-header {
+    @apply fixed top-0 left-0 w-full opacity-50 z-50
+  }
+}
